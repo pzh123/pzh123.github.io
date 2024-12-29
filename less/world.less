@@ -1,0 +1,380 @@
+.wrap{
+  .content{
+    .world{
+      height: 100vh;
+      .swiper-container{
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+
+        }
+        .swiper-slide:last-of-type{
+          height: auto!important;
+        }
+        .page{
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background: url("../images/world/world_page1_bg.png") center bottom no-repeat;
+          position: relative;
+          //大陆样式
+          >.content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .top_img{
+              width: 41.2vh;
+              height: auto;
+              margin-bottom: 2.4vh;
+            }
+            .decorate{
+              width: 52.9vh;
+              margin-bottom: 2.4vh;
+            }
+            .description{
+              text-align: center;
+              font-size: 16px;
+              text-shadow: 0 0 12px rgba(110,159,193,.36), 0 0 12px rgba(110,159,193,.36);
+              line-height: 1.8;
+              color: white;
+            }
+            .handpick{
+              width: 500px;
+              height: 34px;
+              background: url("../images/world/world_page1_text_bg.png") center no-repeat;
+              background-size: cover;
+              margin-top: 1vh;
+              text-align: center;
+              line-height: 34px;
+              font-size: 18px;
+              color: #fff;
+              text-shadow: 0 0 12px rgba(47,125,178,.45), 0 0 12px rgba(47,125,178,.45);
+              cursor: pointer;
+            }
+          }
+          .tip{
+            position: absolute;
+            bottom: 8vh;
+            left: 50%;
+            width: 52px;
+            height: 52px;
+            transform: translateX(-50%);
+            img{
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+
+            }
+            img:first-child{
+              animation: img_shadow 2s linear infinite;
+            }
+            img:last-child{
+              animation: img_arrow 2s linear infinite alternate;
+            }
+          }
+          //城市样式
+          //page2{
+          //  background: url("../images/world/world_page2_bg.png") center center no-repeat;
+          //}
+          .city_content{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 19vh;
+            .city_logo{
+              width: 12vh
+            }
+            .city_name{
+              font-weight: 400;
+              font-size: 4.6vh;
+              line-height: 9vh;
+              color: white;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .city_name_icon{
+                width: 35.6vh;
+                height: 1.3vh;
+                background-image: url("../images/world/world_page2_city_name_left.png");
+                background-position: center center;
+                background-size: 35.6vh 1.3vh;
+              }
+              .city_name_left{
+
+              }
+              .city_name_right{
+                transform: rotate(-180deg);
+              }
+              span{
+                margin: 0 3vh;
+              }
+            }
+            .city_desc{
+              text-align: center;
+              font-size: 14px;
+              margin-top: 20px;
+              line-height: 1.8;
+              color: white;
+            }
+            .city_details{
+              margin-top: 9vh;
+              position: relative;
+              img{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                display: block;
+                transform: translate(-50%,-50%);
+              }
+              img:first-child{
+                width: 98px;
+                animation: img_shadow 2s linear infinite;
+              }
+              img:last-of-type{
+                width: 54px;
+              }
+              p{
+                position: absolute;
+                width: 200px;
+                left: 50%;
+                bottom: -60px;
+                display: block;
+                color: white;
+                transform: translate(-50%,0%);
+                text-align: center;
+              }
+            }
+          }
+          //展开详情的样式
+
+        }
+        .page2{
+          background: url("../images/world/world_page2_bg.png") center center no-repeat;
+        }
+        .page3{
+          background: url("../images/world/world_page3_bg.png") center center no-repeat;
+        }
+        .page3{
+          background: url("../images/world/world_page4_bg.png") center center no-repeat;
+        }
+      }
+    }
+  }
+}
+
+//展开详情的样式
+.detail_box{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999999999999999995!important;
+  padding-top: 107px;
+  padding-bottom: 30px;
+  background: rgba(18,18,18,0.75);
+  border: 1px solid #030000;
+  left: 0;
+  top: 0;
+  >.wrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .center_box{
+      display: flex;
+      flex-direction: column;
+      width: 720px;
+      height: 100%;
+      //border: 1px solid red;
+      .top_box{
+        display: flex;
+        flex-direction: column;
+        .top{
+          display: flex;
+          justify-content: space-between;
+          >.city_name{
+            width: 640px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 28px;
+            color: #fff;
+            padding-left: 24px;
+            background: rgba(128,128,128,0.1) url(data:image/png;base64,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) no-repeat left center/auto 100%;
+          }
+          .close_detail{
+            width: 60px;
+            height: 60px;
+            background: rgba(128,128,128,0.1) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk4OUY1Q0EwMzA1RjExRUFBNDc0RjAyNUFDMkVDRDdEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk4OUY1Q0ExMzA1RjExRUFBNDc0RjAyNUFDMkVDRDdEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTg5RjVDOUUzMDVGMTFFQUE0NzRGMDI1QUMyRUNEN0QiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTg5RjVDOUYzMDVGMTFFQUE0NzRGMDI1QUMyRUNEN0QiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5GtsFGAAAABlBMVEX///8AAABVwtN+AAAAAnRSTlP/AOW3MEoAAABMSURBVHjajJFBDgAgCMO2/3/aBE1k2IOcoEgYU5JHqOJlHrSQk1YhB92p3OlJFMVp9id3gMQp5P1AGqdFJInE05lkCFmHJtN3LAEGAO3kASF1r6YyAAAAAElFTkSuQmCC) center no-repeat;
+            background-size: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .scroll_box{
+        flex: 1;
+        overflow: hidden;
+        margin-top: 25px;
+        .swiper-container{
+          height: 100%;
+          .swiper-scrollbar{
+            left: 99%;
+          }
+        }
+        .swiper-slide{
+          height: auto;
+          .scroll_content{
+            width: 640px;
+            .list{
+              .item{
+                color: white;
+                .title{
+                  position: relative;
+                  font-weight: 400;
+                  font-size: 26px;
+                  line-height: 66px;
+                  height: 66px;
+                  width: 100%;
+                  border-bottom: 3px solid rgba(255,255,255,0.1);
+                  margin-bottom: 20px;
+                }
+                .title::before{
+                  content: "";
+                  display: block;
+                  position: absolute;
+                  left: 0px;
+                  bottom: -3px;
+                  width: 70px;
+                  height: 3px;
+                  background: #cca574;
+                }
+                .desc{
+                  font-size: 14px;
+                  line-height: 1.8;
+                }
+                .bottom_img{
+                  margin-top: 20px;
+                  display: block;
+                  width: 100%;
+                  margin-bottom: 50px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//swiper_navbar导航样式
+.swiper_navbar{
+  position: fixed;
+  z-index: 9999999999999999999999999;
+  right: 38px;
+  top: 50%;
+
+  transition: all .3s linear;
+  transform: translate(180px,-50%);
+  >.box{
+    ul{
+      position: relative;
+      li{
+        margin-bottom: 20px;
+        width: 132px;
+        height: 25px;
+        position: relative;
+        cursor: pointer;
+        .text{
+          width: 100px;
+          height: 25px;
+          text-align: right;
+          padding: 0 12px;
+          font-size: 14px;
+          line-height: 25px;
+          color: white;
+        }
+        .icon{
+          width: 18px;
+          height: 18px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          transform: translateY(-50%) scale(0.3) rotate(45deg);
+        }
+      }
+      li.active{
+        .text{
+          background: white;
+          color: black;
+        }
+        .icon{
+          background: rgba(18,51,77,0.4);
+          border: #fff 1px solid;
+          transform: translateY(-50%) scale(1) rotate(45deg);
+        }
+        .icon::before{
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          width: 8px;
+          height: 8px;
+          background: #fff;
+        }
+      }
+      .line{
+        position: absolute;
+        top: 50%;
+        right: 8px;
+        //left: 0px;
+        width: 2px;
+        background: rgba(255,255,255,0.2);
+        transform: translateY(-50%);
+      }
+      .line::before{
+        content: '';
+        position: absolute;
+        right: -2px;
+        width: 6px;
+        height: 12px;
+        background: url("../images/world/world_navbar_line_icon.png") no-repeat top center;
+      }
+      .line::after{
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        right: -2px;
+        width: 6px;
+        height: 12px;
+        background: url("../images/world/world_navbar_line_icon.png") no-repeat top center;
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}
+.swiper_navbar.active{
+  transform: translate(0px,-50%);
+}
+@keyframes img_shadow {
+  from{
+    transform: translate(-50%,-50%) scale(0);
+  }
+  to{
+    transform: translate(-50%,-50%) scale(1);
+  }
+}
+@keyframes img_arrow {
+  from{
+    transform: translate(-50%,0px);
+  }
+  to{
+    transform: translate(-50%,5px);
+  }
+}
+
+

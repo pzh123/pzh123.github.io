@@ -1,0 +1,33 @@
+/*媒体查询*/
+/*.wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.fire*/
+/*left: calc(50vw - 60vh);*/
+.wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.fire{
+    left: calc(50vw - 60vh);
+}
+.wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.role{
+    top: 0;
+    left: calc(50% - 63vh);
+}
+.wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.role_descirpt_box{
+    top: 18vh;
+    left: calc(50% - 53vh);
+}
+@media screen and (max-width:1640px) {
+    .wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.fire{
+        left: calc(50vw - 50vh);
+    }
+}
+@media screen and (max-height:800px) {
+    .wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.fire{
+        top: 68px;
+        left: calc(50% - 496px) !important;
+    }
+    .wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.role{
+        left: calc(50% - 504px);
+        height: 800px;
+    }
+    .wrap .content .role_box .swiper_moudle .swiper-container .swiper-slide>.role_descirpt_box{
+        top: 144px;
+        left: calc(50% - 424px) !important;
+    }
+}
