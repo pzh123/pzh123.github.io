@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公共页面</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./less/common.less" type="text/less">
+    <script src="./lib/less/less.min.js"></script>
+    <script src="./lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!--        头部-->
+    <header>
+        <div class="leftBox">
+            <div class="music_logo">
+                <div class="musicBox">
+                    <img class="showMucis" src="./images/index/music.png" alt="">
+                    <img class="hideMucis" src="./images/index/hide_music.png" alt="">
+                </div>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="news.html">新闻</a></li>
+                    <li><a href="role.html">角色</a></li>
+                    <li><a href="world.html">世界</a></li>
+                    <li><a href="comic.html">漫画</a></li>
+                    <li><a href="javascript:;">社区</a></li>
+                    <div class="buleLine"></div>
+                </ul>
+
+            </div>
+        </div>
+        <div class="rightBox">
+            <a href="javascript:;" class="leftBox">
+                <span>成长关爱系统</span>
+                <div class="loveBox">
+                    <img class="loveImg"  src="./images/index/love.png" alt="">
+                    <div class="maskImg"></div>
+                </div>
+            </a>
+            <div class="loginBox2">
+                <span>登录</span>
+                <div class="userBox">
+                    <img src="./images/index/user.png" alt="">
+                    <div class="maskImg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+
+    </div>
+    <footer>
+        <div class="topIcon">
+            <i class="fa fa-weibo"></i>
+            <i class="fa fa-weixin"></i>
+            <i class="fa fa-qq"></i>
+            <i class="fa fa-share-alt"></i>
+        </div>
+        <div class="content">
+            <div class="left">
+                <img class="foot_mihayo" style="" src="./images/index/foot_mihayo.png" alt="">
+                <div class="line"></div>
+                <img class="og" src="./images/index/og.png" alt="">
+            </div>
+            <div class="right">
+                <div class="protocol">
+                    <a href="javascript:;">用户协议</a>
+                    <a href="javascript:;">隐私政策</a>
+                    <a href="javascript:;">儿童隐私政策</a>
+                    <a href="javascript:;">自律公约</a>
+                    <a href="javascript:;">自律公约</a>
+                    <a href="javascript:;">家长监护工程</a>
+                    <a href="javascript:;">关于我们</a>
+                    <a href="javascript:;">联系我们</a>
+                    <a href="javascript:;">加入我们</a>
+                </div>
+                <div class="contentScerity">
+                    <p>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+                    <p><a href="javascript:;">沪公网安备31010402001113号</a><span class="split_line">|</span><span>增值电信业务经营许可证：沪B2-20190555</span></p>
+                    <p><a href="javascript:;">沪ICP备19018275号-4</a><span class="split_line">|</span><span>沪网文〔2019〕3168-216号</span><span class="split_line">|</span><span>国新出审【2019】2978号</span></p>
+                    <p><span>互联网违法不良信息举报邮箱: tousu@mihoyo.com</span><span>互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点）</span></p>
+                    <p><span>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听</span></p>
+                    <p><span>未成年成长关爱热线：021-60371740</span></p>
+                    <p><span>© 2020 米哈游版权所有</span><span class="split_line">|</span><span>上海米哈游影铁科技有限公司 </span><span>客服电话：400-666-6312</span></p>
+                </div>
+                <div class="authentication">
+                    <a href="javascript:;" style="background-image: url('./images/index/auth01.png')"></a>
+                    <a href="javascript:;" style="background-image: url('./images/index/auth02.png')"></a>
+                    <a href="javascript:;" style="background-image: url('./images/index/auth03.png')"></a>
+                    <a href="javascript:;" style="background-image: url('./images/index/auth04.png')"></a>
+                    <a href="javascript:;" style="background-image: url('./images/index/auth05.png')"></a>
+                    <a href="javascript:;" style="background-image: url('./images/index/auth06.png')"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom" style="height: 35px;width: 100%;background: #111111"></div>
+    </footer>
+</div>
+<!--    打开视频视图-->
+<div class="showVideView">
+    <div class="contentBox">
+        <div class="videBox">
+            <video controls id="myvideo">
+                <source src="./images/index/introduce.mp4">
+            </video>
+            <div class="closeVideBtn">
+                <img src="./images/index/closeVideo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--    关注扫描视图-->
+<div class="guanzhuWrap" style="display: none">
+    <div class="guanzhuBox">
+        <div class="top">
+            <div class="title">关注我们</div>
+            <img src="./images/index/guanzhu_qrcode.png" alt="">
+            <p>扫码关注微信</p>
+        </div>
+        <div class="bottom">
+            <div class="list">
+                <div class="item">
+                    <i class="left_icon fa fa-weibo"></i>
+                    <div class="right_text">官方微博</div>
+                </div>
+                <div class="item">
+                    <i style="font-size: 18px" class="left_icon">Tap</i>
+                    <div class="right_text">TapTap</div>
+                </div>
+                <div class="item">
+                    <i class="left_icon fa fa-comments"></i>
+                    <div class="right_text">官方社区</div>
+                </div>
+            </div>
+        </div>
+        <div class="foldBtn">
+            <i class="rightFoldBtn fa fa-angle-right"></i>
+            <i class="leftFoldBtn fa fa-angle-left" style="display: none"></i>
+        </div>
+    </div>
+</div>
+<div class="loginBox">
+    <div class="wrap">
+        <div class="loginCenter">
+            <div class="loginImg">
+                <img src="./images/index/login_title.png" alt="">
+            </div>
+            <div class="contentBox">
+                <div class="closeLoginView">
+                    <img src="./images/index/closeLoginView.png" alt="">
+                </div>
+                <div class="toogle">
+                    <div class="tabItem yzCode active" data-index="0">
+                        <div class="text">验证码登录</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="tabItem mmCode" data-index="1">
+                        <div class="text">密码登录</div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="toggleContent">
+                    <div class="tabItemContent yzContent" >
+                        <form action="javascript:;">
+                            <div class="inputBox">
+                                <input placeholder="手机号码登录\注册" name="username" type="text">
+                            </div>
+                            <div class="yzCode inputBox">
+                                <input placeholder="验证码" name="yzcode" type="text">
+                                <div class="getCode">
+                                    <div class="getCodeBtn">获取验证码</div>
+                                    <div class="showmao">已发送（0s）</div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="登录">
+                            </div>
+                        </form>
+                        <div class="pro_res">
+                            <a href="javascript:;">登录有问题？</a>
+                            <a href="javascript:;" class="register">立即注册</a>
+                        </div>
+                        <div class="remind">
+                            <span>未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守</span>
+                            <a href="javascript:;">《米哈游通行证用户服务协议》</a>
+                            <a href="javascript:;">《米哈游通行证用户个人信息及隐私保护政策》</a>
+                        </div>
+                    </div>
+                    <div class="mmContent tabItemContent" style="display: none">
+                        <form action="javascript:;">
+                            <div class="inputBox">
+                                <input placeholder="手机号码\邮箱" name="username" type="text">
+                            </div>
+                            <div class="yzCode inputBox">
+                                <input placeholder="密码" name="password" type="password">
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" value="登录">
+                            </div>
+                        </form>
+                        <div class="pro_res">
+                            <a href="javascript:;">登录有问题？</a>
+                            <a href="javascript:;" class="register">立即注册</a>
+                        </div>
+                        <div class="remind">
+                            <span>登录即代表您同意并遵守</span>
+                            <a href="javascript:;">《米哈游通行证用户服务协议》</a>
+                            <a href="javascript:;">《米哈游通行证用户个人信息及隐私保护政策》</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--    背景音乐-->
+<div class="bgmusic">
+    <audio  loop="loop" id="music" preload="preload" controls="controls" hidden>
+        <source src="./images/index/bgmusic.mp3">
+    </audio>
+</div>
+<script src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.wrap{
+  .content{
+    .comicBox{
+      .comicHeader{
+        width: 100%;
+        height: 450px;
+        padding-top: 141px;
+        background: url("../images/comic/comic_header_bg.jpg") 0px 0px no-repeat;
+        background-size: 100% 100%;
+        .widthBox{
+          width: 1280px;
+          min-width: 1280px;
+          margin: 0 auto;
+          h1{
+            font-family: "Microsoft YaHei", "微软雅黑", "MicrosoftJhengHei", "华文细黑", "STHeiti", "MingLiu";
+            word-spacing: 1px;
+            font-size: 36px;
+            height: 44px;
+            line-height: 44px;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.1);
+          }
+          .description{
+            width: 600px;
+            p{
+              line-height: 24px;
+              font-weight: 600;
+              font-size: 16px;
+            }
+          }
+          .btnBox{
+            margin-top: 24px;
+            display: flex;
+            >div{
+              width: 175px;
+              height: 36px;
+              line-height: 36px;
+              border-radius: 4px;
+              color: white;
+              text-align: center;
+              margin-right: 27px;
+              a{
+                color: white;
+              }
+            }
+            .leftBtn{
+              background-color: #00c0ff;
+            }
+            .rightBtn{
+              background:  #111;;
+            }
+          }
+        }
+      }
+      .comicListBox{
+        width: 100%;
+        padding-top: 46px;
+        padding-bottom: 24px;
+        background: url("../images/comic/comic_list_bg.jpg") no-repeat;
+        background-size: cover;
+        .comicList{
+          width: 1280px;
+          min-width: 1280px;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          .comicItem{
+            position: relative;
+            width: 305px;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+            height: 172px;
+            text-align: center;
+            cursor: pointer;
+            .comic_head_img{
+              display: block;
+              transition: all .5s linear;
+            }
+            .comic_title{
+              position: absolute;
+              left: 0px;
+              bottom: 0px;
+              width: 100%;
+              height: 36px;
+              line-height: 36px;
+              background: #111;
+              opacity: .75;
+              font-size: 20px;
+              color: #fff;
+            }
+          }
+          .comicItem:hover img{
+            transform: scale(1.3);
+          }
+
+        }
+      }
+    }
+  }
+}
